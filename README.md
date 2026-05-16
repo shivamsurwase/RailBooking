@@ -70,7 +70,7 @@ psql -U postgres -d karbs_db -f full_db_dump.sql
     ```bash
     ./mvnw spring-boot:run
     ```
-    *   First run looks for database `karbs_db` and seeds data.
+    *   First run looks for database `bus_db` and seeds data.
     *   Server starts at: `http://localhost:8080`
 
 ### API Documentation
