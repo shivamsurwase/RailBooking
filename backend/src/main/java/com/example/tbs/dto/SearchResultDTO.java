@@ -1,15 +1,3 @@
-/*
- * Copyright (c) 2026 Thilak S. All Rights Reserved.
- *
- * This source code, inclusive of the logic, design, and intellectual property,
- * is the sole property of Thilak S.
- *
- * Created by Thilak S.
- *
- * This source code is licensed under the proprietary license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 package com.example.tbs.dto;
 
 import lombok.AllArgsConstructor;
@@ -33,6 +21,15 @@ public class SearchResultDTO {
 
     private int availableSeats;
 
+    // Getters and Setters for SearchResultDTO
+    public int getAvailableSeats() {
+        return availableSeats;
+    }
+
+    public void setAvailableSeats(int availableSeats) {
+        this.availableSeats = availableSeats;
+    }
+
     // New field for segments
     private List<SegmentDTO> segments;
 
@@ -55,6 +52,15 @@ public class SearchResultDTO {
         private Long sourceStationId;
         private Long destStationId;
         private int availableSeats;
+
+        // Getters and Setters for SegmentDTO
+        public int getAvailableSeats() {
+            return availableSeats;
+        }
+
+        public void setAvailableSeats(int availableSeats) {
+            this.availableSeats = availableSeats;
+        }
 
         public SegmentDTO(String trainName, String trainNumber, String sourceStationCode, String destStationCode,
                 LocalTime departureTime, LocalTime arrivalTime, String description, Long trainId, Long sourceStationId,

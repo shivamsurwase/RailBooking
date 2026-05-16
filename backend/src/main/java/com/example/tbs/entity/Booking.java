@@ -1,15 +1,3 @@
-/*
- * Copyright (c) 2026 Thilak S. All Rights Reserved.
- *
- * This source code, inclusive of the logic, design, and intellectual property,
- * is the sole property of Thilak S.
- *
- * Created by Thilak S.
- *
- * This source code is licensed under the proprietary license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 package com.example.tbs.entity;
 
 import jakarta.persistence.*;
@@ -47,8 +35,79 @@ public class Booking {
     private Station destStation;
 
     private String bookingStatus;
-
     private String pnr;
-
     private Double totalFare;
+
+    // Getters and Setters
+    public Long getBookingId() {
+        return bookingId;
+    }
+
+    public void setBookingId(Long bookingId) {
+        this.bookingId = bookingId;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Train getTrain() {
+        return train;
+    }
+
+    public void setTrain(Train train) {
+        this.train = train;
+    }
+
+    public LocalDate getJourneyDate() {
+        return journeyDate;
+    }
+
+    public void setJourneyDate(LocalDate journeyDate) {
+        this.journeyDate = journeyDate;
+    }
+
+    public Station getSourceStation() {
+        return sourceStation;
+    }
+
+    public void setSourceStation(Station sourceStation) {
+        this.sourceStation = sourceStation;
+    }
+
+    public Station getDestStation() {
+        return destStation;
+    }
+
+    public void setDestStation(Station destStation) {
+        this.destStation = destStation;
+    }
+
+    public String getBookingStatus() {
+        return bookingStatus;
+    }
+
+    public void setBookingStatus(String bookingStatus) {
+        this.bookingStatus = bookingStatus;
+    }
+
+    public String getPnr() {
+        return pnr;
+    }
+
+    public void setPnr(String pnr) {
+        this.pnr = pnr;
+    }
+
+    public Double getTotalFare() {
+        return totalFare;
+    }
+
+    public void setTotalFare(Double totalFare) {
+        this.totalFare = totalFare;
+    }
 }

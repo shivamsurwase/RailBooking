@@ -1,15 +1,3 @@
-/*
- * Copyright (c) 2026 Thilak S. All Rights Reserved.
- *
- * This source code, inclusive of the logic, design, and intellectual property,
- * is the sole property of Thilak S.
- *
- * Created by Thilak S.
- *
- * This source code is licensed under the proprietary license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 package com.example.tbs.entity;
 
 import jakarta.persistence.*;
@@ -40,4 +28,61 @@ public class TrainSchedule {
     private LocalTime departureTime;
     private int stopSequence;
     private int distanceFromStartKm;
+
+    // Getters and Setters
+    public Long getScheduleId() {
+        return scheduleId;
+    }
+
+    public void setScheduleId(Long scheduleId) {
+        this.scheduleId = scheduleId;
+    }
+
+    public Train getTrain() {
+        return train;
+    }
+
+    public void setTrain(Train train) {
+        this.train = train;
+    }
+
+    public Station getStation() {
+        return station;
+    }
+
+    public void setStation(Station station) {
+        this.station = station;
+    }
+
+    public LocalTime getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public void setArrivalTime(LocalTime arrivalTime) {
+        this.arrivalTime = arrivalTime;
+    }
+
+    public LocalTime getDepartureTime() {
+        return departureTime;
+    }
+
+    public void setDepartureTime(LocalTime departureTime) {
+        this.departureTime = departureTime;
+    }
+
+    public int getStopSequence() {
+        return stopSequence;
+    }
+
+    public void setStopSequence(int stopSequence) {
+        this.stopSequence = stopSequence;
+    }
+
+    public int getDistanceFromStartKm() {
+        return distanceFromStartKm;
+    }
+
+    public void setDistanceFromStartKm(int distanceFromStartKm) {
+        this.distanceFromStartKm = distanceFromStartKm;
+    }
 }

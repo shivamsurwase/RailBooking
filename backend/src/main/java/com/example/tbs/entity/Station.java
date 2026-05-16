@@ -1,15 +1,3 @@
-/*
- * Copyright (c) 2026 Thilak S. All Rights Reserved.
- *
- * This source code, inclusive of the logic, design, and intellectual property,
- * is the sole property of Thilak S.
- *
- * Created by Thilak S.
- *
- * This source code is licensed under the proprietary license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 package com.example.tbs.entity;
 
 import jakarta.persistence.*;
@@ -34,4 +22,53 @@ public class Station {
     private String city;
     private Double latitude;
     private Double longitude;
+
+    // Getters and Setters
+    public Long getStationId() {
+        return stationId;
+    }
+
+    public void setStationId(Long stationId) {
+        this.stationId = stationId;
+    }
+
+    public String getStationCode() {
+        return stationCode;
+    }
+
+    public void setStationCode(String stationCode) {
+        this.stationCode = stationCode;
+    }
+
+    public String getStationName() {
+        return stationName;
+    }
+
+    public void setStationName(String stationName) {
+        this.stationName = stationName;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
+
+    public Double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
+    }
 }

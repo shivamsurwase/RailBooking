@@ -1,15 +1,3 @@
-/*
- * Copyright (c) 2026 Thilak S. All Rights Reserved.
- *
- * This source code, inclusive of the logic, design, and intellectual property,
- * is the sole property of Thilak S.
- *
- * Created by Thilak S.
- *
- * This source code is licensed under the proprietary license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 package com.example.tbs.entity;
 
 import jakarta.persistence.*;
@@ -35,4 +23,53 @@ public class BookedSeat {
     private int seatNumber;
     private int fromSeq;
     private int toSeq;
+
+    // Getters and Setters
+    public Long getSeatId() {
+        return seatId;
+    }
+
+    public void setSeatId(Long seatId) {
+        this.seatId = seatId;
+    }
+
+    public Booking getBooking() {
+        return booking;
+    }
+
+    public void setBooking(Booking booking) {
+        this.booking = booking;
+    }
+
+    public String getCoachType() {
+        return coachType;
+    }
+
+    public void setCoachType(String coachType) {
+        this.coachType = coachType;
+    }
+
+    public int getSeatNumber() {
+        return seatNumber;
+    }
+
+    public void setSeatNumber(int seatNumber) {
+        this.seatNumber = seatNumber;
+    }
+
+    public int getFromSeq() {
+        return fromSeq;
+    }
+
+    public void setFromSeq(int fromSeq) {
+        this.fromSeq = fromSeq;
+    }
+
+    public int getToSeq() {
+        return toSeq;
+    }
+
+    public void setToSeq(int toSeq) {
+        this.toSeq = toSeq;
+    }
 }

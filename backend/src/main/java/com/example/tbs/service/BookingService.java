@@ -1,15 +1,3 @@
-/*
- * Copyright (c) 2026 Thilak S. All Rights Reserved.
- *
- * This source code, inclusive of the logic, design, and intellectual property,
- * is the sole property of Thilak S.
- *
- * Created by Thilak S.
- *
- * This source code is licensed under the proprietary license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 package com.example.tbs.service;
 
 import com.example.tbs.dto.BookingRequestDTO;
@@ -358,6 +346,127 @@ public class BookingService {
                 private String userName;
                 private String userEmail;
                 private String pnr;
+
+                // Getters and Setters
+                public Long getBookingId() {
+                        return bookingId;
+                }
+
+                public void setBookingId(Long bookingId) {
+                        this.bookingId = bookingId;
+                }
+
+                public Long getUserId() {
+                        return userId;
+                }
+
+                public void setUserId(Long userId) {
+                        this.userId = userId;
+                }
+
+                public Long getTrainId() {
+                        return trainId;
+                }
+
+                public void setTrainId(Long trainId) {
+                        this.trainId = trainId;
+                }
+
+                public java.time.LocalDate getJourneyDate() {
+                        return journeyDate;
+                }
+
+                public void setJourneyDate(java.time.LocalDate journeyDate) {
+                        this.journeyDate = journeyDate;
+                }
+
+                public Long getSourceStationId() {
+                        return sourceStationId;
+                }
+
+                public void setSourceStationId(Long sourceStationId) {
+                        this.sourceStationId = sourceStationId;
+                }
+
+                public Long getDestStationId() {
+                        return destStationId;
+                }
+
+                public void setDestStationId(Long destStationId) {
+                        this.destStationId = destStationId;
+                }
+
+                public String getBookingStatus() {
+                        return bookingStatus;
+                }
+
+                public void setBookingStatus(String bookingStatus) {
+                        this.bookingStatus = bookingStatus;
+                }
+
+                public Train getTrain() {
+                        return train;
+                }
+
+                public void setTrain(Train train) {
+                        this.train = train;
+                }
+
+                public Station getSourceStation() {
+                        return sourceStation;
+                }
+
+                public void setSourceStation(Station sourceStation) {
+                        this.sourceStation = sourceStation;
+                }
+
+                public Station getDestStation() {
+                        return destStation;
+                }
+
+                public void setDestStation(Station destStation) {
+                        this.destStation = destStation;
+                }
+
+                public List<BookedSeatDTO> getSeats() {
+                        return seats;
+                }
+
+                public void setSeats(List<BookedSeatDTO> seats) {
+                        this.seats = seats;
+                }
+
+                public Double getTotalPrice() {
+                        return totalPrice;
+                }
+
+                public void setTotalPrice(Double totalPrice) {
+                        this.totalPrice = totalPrice;
+                }
+
+                public String getUserName() {
+                        return userName;
+                }
+
+                public void setUserName(String userName) {
+                        this.userName = userName;
+                }
+
+                public String getUserEmail() {
+                        return userEmail;
+                }
+
+                public void setUserEmail(String userEmail) {
+                        this.userEmail = userEmail;
+                }
+
+                public String getPnr() {
+                        return pnr;
+                }
+
+                public void setPnr(String pnr) {
+                        this.pnr = pnr;
+                }
         }
 
         @lombok.Data
@@ -366,5 +475,30 @@ public class BookingService {
                 private Long seatId;
                 private int seatNumber;
                 private String coachType;
+
+                // Getters and Setters
+                public Long getSeatId() {
+                        return seatId;
+                }
+
+                public void setSeatId(Long seatId) {
+                        this.seatId = seatId;
+                }
+
+                public int getSeatNumber() {
+                        return seatNumber;
+                }
+
+                public void setSeatNumber(int seatNumber) {
+                        this.seatNumber = seatNumber;
+                }
+
+                public String getCoachType() {
+                        return coachType;
+                }
+
+                public void setCoachType(String coachType) {
+                        this.coachType = coachType;
+                }
         }
 }

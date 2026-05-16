@@ -1,15 +1,3 @@
-/*
- * Copyright (c) 2026 Thilak S. All Rights Reserved.
- *
- * This source code, inclusive of the logic, design, and intellectual property,
- * is the sole property of Thilak S.
- *
- * Created by Thilak S.
- *
- * This source code is licensed under the proprietary license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 package com.example.tbs.entity;
 
 import jakarta.persistence.*;
@@ -34,4 +22,53 @@ public class Train {
 
     @Column(nullable = false, columnDefinition = "bigint default 100")
     private Long price = 100L;
+
+    // Getters and Setters
+    public Long getTrainId() {
+        return trainId;
+    }
+
+    public void setTrainId(Long trainId) {
+        this.trainId = trainId;
+    }
+
+    public String getTrainNumber() {
+        return trainNumber;
+    }
+
+    public void setTrainNumber(String trainNumber) {
+        this.trainNumber = trainNumber;
+    }
+
+    public String getTrainName() {
+        return trainName;
+    }
+
+    public void setTrainName(String trainName) {
+        this.trainName = trainName;
+    }
+
+    public Integer getTotalSeatsPerCoach() {
+        return totalSeatsPerCoach;
+    }
+
+    public void setTotalSeatsPerCoach(Integer totalSeatsPerCoach) {
+        this.totalSeatsPerCoach = totalSeatsPerCoach;
+    }
+
+    public Integer getNumberOfCoaches() {
+        return numberOfCoaches;
+    }
+
+    public void setNumberOfCoaches(Integer numberOfCoaches) {
+        this.numberOfCoaches = numberOfCoaches;
+    }
+
+    public Long getPrice() {
+        return price;
+    }
+
+    public void setPrice(Long price) {
+        this.price = price;
+    }
 }
