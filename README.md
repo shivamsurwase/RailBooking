@@ -21,7 +21,7 @@ The project uses PostgreSQL. You need to set up the database before running the 
 ### 1. Create Database
 Open your terminal or pgAdmin and run:
 ```sql
-CREATE DATABASE karbs_db;
+CREATE DATABASE bus_db;
 ```
 
 ### 2. Configuration
@@ -50,13 +50,6 @@ The application includes a `DataSeeder.java` component.
 *   **Test Credentials**:
     *   User: `user` / `password`
     *   Admin: `admin` / `admin`
-
-#### Option B: Manual SQL Import (Production/Restore)
-A full database dump is provided in the root directory: `full_db_dump.sql`.
-To import it:
-```bash
-psql -U postgres -d karbs_db -f full_db_dump.sql
-```
 
 ---
 
