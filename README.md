@@ -27,7 +27,7 @@ CREATE DATABASE karbs_db;
 ### 2. Configuration
 Open `backend/src/main/resources/application.properties` and verify your credentials.
 By default, it uses:
-*   Username: `postgres`
+*   Username: `Mysql`
 *   Password: `password`
 
 If your local PostgreSQL setup uses different credentials, you can either:
@@ -35,10 +35,10 @@ If your local PostgreSQL setup uses different credentials, you can either:
 2.  Or manually update `backend/src/main/resources/application.properties`.
 
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/karbs_db
-spring.datasource.username=${DB_USERNAME:postgres}
-spring.datasource.password=${DB_PASSWORD:password}
-spring.jpa.properties.hibernate.default_schema=karbs
+spring.datasource.url=jdbc:mysql://localhost:3306/bus_db  
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=SHIV@09
 ```
 
 ### 3. Populating Data (Two Options)
